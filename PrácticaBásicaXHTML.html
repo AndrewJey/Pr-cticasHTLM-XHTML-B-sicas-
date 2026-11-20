@@ -1,48 +1,71 @@
-<?xml version="1.1" encoding="UTF-8"?>
-<!DOCTYPE html5 PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ES"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
-<!--@uthor: Andrés J. Jiménez Leandro, created: 2015-11-05 Jueves-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<!-- @author: Andrés J. Jiménez Leandro, created: 2015-11-05 Jueves -->
 <head>
-<meta charset="UTF-8">
-<title>PRÁCTICA-XHTML</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRÁCTICA-XHTML</title>
+  <style type="text/css">
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; padding: 2rem 1rem; background: #f5f6ce; color: #111827; font-family: system-ui, sans-serif; line-height: 1.6; }
+    .container { max-width: 960px; margin: 0 auto; background: #fff; border-radius: 16px; padding: 2rem 1.5rem; box-shadow: 0 12px 28px rgba(17, 24, 39, 0.08); }
+    .back { display: inline-block; margin-bottom: 1rem; color: #1d4ed8; font-weight: 600; text-decoration: none; }
+    h1 { margin: 0 0 0.75rem; text-align: center; color: #b91c1c; font-style: italic; text-decoration: underline; }
+    .texto_principal { text-align: center; font-size: 1.35rem; margin: 1rem 0 1.5rem; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; min-width: 640px; border: 2px solid #94a3b8; }
+    th, td { border: 1px solid #94a3b8; padding: 0.7rem; text-align: center; }
+    th { background: #fef9c3; }
+    .texto_vinculado { text-align: center; margin-top: 1.5rem; font-size: 1.15rem; font-style: italic; }
+    .texto_vinculado a { color: #1d4ed8; font-weight: 600; }
+    .hidden-note { display: none; }
+  </style>
 </head>
-<body style="background-color:#F5F6CE">
-<font size="5" color="RED">
-<u><b><i><h1><center>HOLA MUNDO</center></h1></i></b></u>
-</font><br />
-<div class="texto_principal">
-<span id="expansiónGeneral">
-<font size="6" color="black">
-<p name="párrafo_Principal" />Ya programo XHTML
-</font>
-</span>
-</div> <br />
-<center><table border="3">
-<thead valign="middle"><tr>
-<th>NOMBRES</th>
-<th>APELLIDOS</th>
-<th>EDAD</th>
-<th>TELÉFONO</th>
-<th>CELULAR</th>
-<th>eM@iL</th>
-<th>DIRECCIÓN</th></tr>
-</thead>
-<tbody valign="middle"><tr>
-<td><center>Andrés Joseph</center></td>
-<td><center>Jiménez Leandro</center></td>
-<td><center>29 años</center></td>
-<td><center>2460####</CENTER></td>
-<td><CENTER>89651446</center></td>
-<td><center>ajimenezl@ucatolica.ac.cr</center></td>
-<td><center>La Abundancia de San Carlos</center></td>
-</tr></tbody>
-</center></table><br />
-<div class="texto_vinculado">
-<span id="expansiónDeLink"> 
-<font size="5" color="blue">
-<i><center /><a href="https://es.wikipedia.org/wiki/XHTML" title="Bibliografía XHTML" target="_blank">Bibliografía</a></i>
-</font>
+<body>
+  <div class="container">
+    <p><a class="back" href="index.html">← Volver al índice de prácticas</a></p>
+    <h1>HOLA MUNDO</h1>
+
+    <div class="texto_principal">
+      <p id="expansionGeneral">Ya programo XHTML</p>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>NOMBRES</th>
+            <th>APELLIDOS</th>
+            <th>EDAD</th>
+            <th>TELÉFONO</th>
+            <th>CELULAR</th>
+            <th>eM@iL</th>
+            <th>DIRECCIÓN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Andrés Joseph</td>
+            <td>Jiménez Leandro</td>
+            <td>29 años</td>
+            <td>2460####</td>
+            <td>89651446</td>
+            <td><a href="mailto:ajimenezl@ucatolica.ac.cr">ajimenezl@ucatolica.ac.cr</a></td>
+            <td>La Abundancia de San Carlos</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="texto_vinculado">
+      <p id="expansionDeLink">
+        <a href="https://es.wikipedia.org/wiki/XHTML" title="Bibliografía XHTML">Bibliografía XHTML</a>
+      </p>
+    </div>
+
+    <p class="hidden-note">ESTOY OCULTO</p>
+  </div>
 </body>
-<p hidden="ESTOY OCULTO"/>
 </html>

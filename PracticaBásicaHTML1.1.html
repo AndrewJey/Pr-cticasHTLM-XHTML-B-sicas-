@@ -1,59 +1,77 @@
-<HTML><!--Archivo tipo HTML-->
-<!--@uthor: Andrés J. Jiménez Leandro, created: 2016-07-08 Viernes-->
-<head><!--Comandos de Encabezado-->
-<title>PRÁCTICA-01</title><!--Título de Pestaña del Browser-->
-</head><!--Cierre de encabezado-->
-<body style="background-color:#F5F6CE"><!--Cuerpo del Documento-->
-<font size="5" color="RED"><!--Formato de Fuente-->
-<u><b><i><h1><center> HOLA MUNDO </center></h1></i></b></u>
-</font><!--Cierre del Formato de Fuente-->
-<br><!--Salto de Línea-->
-<div class="texto_principal"><!--div:división--> 
-<span id="expansionGeneral"><!--span:expansión-->
-<font size="6" color="black"><!--Formato de Fuente-->
-<p name="párrafo_Principal"><!--p:párrafo--> Ya programo HTML </p><!--Cierre del Párrafo-->  
-</font><!--Cierre del Formato de Fuente--> 
-</span><!--Cierre de la Expansión--> 
-</div><!--Cierre del divisor--> 
-<br><!--Salto de Línea-->
-<center><table border="3" valign="middle"> <!--Crear Tabla centrada con 3px de borde y alineando todo a la mitad--> 
-<tr><!--tr=Table Row:Fila de la Tabla--> 
-<th>NOMBRES</th><!--th=TableHeader:Encabezado Titular de la Tabla - Título: Nombres--> 
-<th>APELLIDOS</th><!--th=TableHeader:Encabezado Titular de la Tabla - Apellidos--> 
-<th>EDAD</th><!--th=TableHeader:Encabezado Titular de la Tabla - Título: Edad--> 
-<th>TELÉFONO</th><!--th=TableHeader:Encabezado Titular de la Tabla - Teléfono--> 
-<th>CELULAR</th><!--th=TableHeader:Encabezado Titular de la Tabla - Título: Celular--> 
-<th>eM@iL</th><!--th=TableHeader:Encabezado Titular de la Tabla - Título: eM@iL--> 
-<th>DIRECCIÓN</th><!--th=TableHeader:Encabezado Titular de la Tabla - Dirección--> 
-</tr><!--Cierre de la Fila de Tabla--> 
-<tbody valign="middle"><!--Cuerpo de la Tabla, alineando todo a la mitad--> 
-<tr><!--tr=Table Row:Fila de la Tabla--> 
-<!--LLENAR LA FILA DE DATOS SEGÚN CORRESPONDE:--> 
-<td><!--td=TableData:Datos de la Tabla--><center>Andrés Joseph</center></td> 
-<td><center>Jiménez Leandro</center></td> 
-<td><center>29 años</center></td> 
-<td><center>2460XXXX</CENTER></td> 
-<td><CENTER>89651446</center></td> 
-<td><center>ajimenezl@ucatolica.ac.cr</center></td> 
-<td><center>La Abundancia de San Carlos</center></td> 
-</tr><!--Cierre de la Fila de Tabla--> 
-<tr><!--Fila de Tabla-->
-<td><!--td=TableData:Datos de la Tabla--><center>Arbay Jesús</center></td> 
-<td><center>Fernández Solano</center></td> 
-<td><center>20 años</center></td> 
-<td><center>4701XXXX</CENTER></td> 
-<td><CENTER>61097578</center></td> 
-<td><center>afernandezs@ucatolica.ac.cr</center></td> 
-<td><center>Calle Barrantes, Chachagua</center></td> 
-</tr><!--Cierre de la Fila de Tabla--> 
-</tbody><!--Cierre del Cuerpo de la Tabla--> 
-</center></table> <!--Cierre de la Tabla--> 
-<br> <!--Salto de Línea-->
-<div class="texto_vinculado"> <!--Divisor de Textos--> 
-<span id="expansiónDeLink"> <!--Expansión del Texto--> 
-<font size="5" color="blue"><!--Formato de Fuente--> 
-<!--ASÍ SE CREA UN HIPER-VÍNCULO EN HTML:--> 
-<i><center><a href="http://es.wikipedia.org/wiki/HTML" title="Bibliografía HTML">Bibliografía</a></center></i>
-</font><!--Cierre del Formato de Fuente-->
-</body><!--Cierre del Cuerpo del Documento HTML-->
-</HTML><!--Cierre de Archivo tipo HTML-->
+<!DOCTYPE html> <!-- Archivo HTML estándar -->
+<!-- @author: Andrés J. Jiménez Leandro, created: 2016-07-08 Viernes -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRÁCTICA-01 — HTML 1.1</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; padding: 2rem 1rem; background: #f5f6ce; color: #111827; font-family: system-ui, sans-serif; line-height: 1.6; }
+    main { max-width: 960px; margin: 0 auto; background: #fff; border-radius: 16px; padding: 2rem 1.5rem; box-shadow: 0 12px 28px rgba(17, 24, 39, 0.08); }
+    .back { display: inline-block; margin-bottom: 1rem; color: #1d4ed8; font-weight: 600; text-decoration: none; }
+    h1 { margin: 0 0 0.75rem; text-align: center; color: #b91c1c; font-style: italic; text-decoration: underline; }
+    .texto_principal { text-align: center; font-size: 1.35rem; margin: 1rem 0 1.5rem; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; min-width: 640px; border: 2px solid #94a3b8; }
+    th, td { border: 1px solid #94a3b8; padding: 0.7rem; text-align: center; }
+    th { background: #fef9c3; }
+    .texto_vinculado { text-align: center; margin-top: 1.5rem; font-size: 1.15rem; font-style: italic; }
+    .texto_vinculado a { color: #1d4ed8; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">← Volver al índice de prácticas</a>
+    <h1>HOLA MUNDO</h1>
+
+    <div class="texto_principal">
+      <span id="expansionGeneral">
+        <p data-name="párrafo_Principal">Ya programo HTML</p>
+      </span>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">NOMBRES</th>
+            <th scope="col">APELLIDOS</th>
+            <th scope="col">EDAD</th>
+            <th scope="col">TELÉFONO</th>
+            <th scope="col">CELULAR</th>
+            <th scope="col">eM@iL</th>
+            <th scope="col">DIRECCIÓN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Andrés Joseph</td>
+            <td>Jiménez Leandro</td>
+            <td>29 años</td>
+            <td>2460XXXX</td>
+            <td>89651446</td>
+            <td><a href="mailto:ajimenezl@ucatolica.ac.cr">ajimenezl@ucatolica.ac.cr</a></td>
+            <td>La Abundancia de San Carlos</td>
+          </tr>
+          <tr>
+            <td>Arbay Jesús</td>
+            <td>Fernández Solano</td>
+            <td>20 años</td>
+            <td>4701XXXX</td>
+            <td>61097578</td>
+            <td><a href="mailto:afernandezs@ucatolica.ac.cr">afernandezs@ucatolica.ac.cr</a></td>
+            <td>Calle Barrantes, Chachagua</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="texto_vinculado">
+      <span id="expansionDeLink">
+        <a href="https://es.wikipedia.org/wiki/HTML" title="Bibliografía HTML" target="_blank" rel="noopener noreferrer">Bibliografía</a>
+      </span>
+    </div>
+  </main>
+</body>
+</html>

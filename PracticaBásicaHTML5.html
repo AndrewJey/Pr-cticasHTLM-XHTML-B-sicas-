@@ -1,62 +1,70 @@
-<!DOCTYPE HTML5> <!--Documento de HTML5-->
-<!--@uthor: Andrés J. Jiménez Leandro, created: 2015-11-05 Jueves-->
-	<html lang="es"> <!--HTML EN LENGUAJE ESPAÑOL-->
-		<head> <!--Comandos de Encabezado-->
-			<meta charset="UTF-8"> <!--Caracteres UNICODE en estandar UNIVERSAL-->
-				<title>PRÁCTICA-01</title> <!--Título de Pestaña del Browser-->
-		</head> <!--Cierre de encabezado-->
-	<body style="background-color:#F5F6CE"> <!--Cuerpo del Documento-->
-		<font size="5" color="RED"> <!--Formato de Fuente-->
-			<!--u:subrayado;b:negrita;i:cursiva;h1=header1:encabezado titular-->
-			<!--center:centrar innerText(texto interno desplegado en web)-->
-			<u><b><i><h1><center> HOLA MUNDO </center></h1></i></b></u>
-</font> <!--Cierre del Formato de Fuente-->
-<br> <!--Salto de Línea-->
-<!--div:división;span:expansión;p:párrafo-->
-<div class="texto_principal">
-<span id="expansiónGeneral">
-<font size="6" color="black"><!--Formato de Fuente-->
-<p name="párrafo_Principal"> Ya programo HTML </p> 
-</font><!--Cierre del Formato de Fuente-->
-</span> <!--Cierre de la Expansión-->
-</div> <!--Cierre del divisor-->
-<br> <!--Salto de Línea-->
-<center><table border="3"> <!--Crear Tabla con 3px de borde-->
-<thead valign="middle"> <!--Encabezado de la tabla, para alinear todo a la mitad-->
-<tr> <!--tr=Table Row:Fila de la Tabla-->
-<th>NOMBRES</th> <!--th=TableHeader:Encabezado Titular de la Tabla - Título Nombres-->
-<th>APELLIDOS</th> <!--th=TableHeader:Encabezado Titular de la Tabla - Apellidos-->
-<th>EDAD</th> <!--th=TableHeader:Encabezado Titular de la Tabla - Título Edad-->
-<th>TELÉFONO</th> <!--th=TableHeader:Encabezado Titular de la Tabla - Teléfono-->
-<th>CELULAR</th> <!--th=TableHeader:Encabezado Titular de la Tabla - Título Celular-->
-<th>eM@iL</th> <!--th=TableHeader:Encabezado Titular de la Tabla - Título eM@iL-->
-<th>DIRECCIÓN</th> <!--th=TableHeader:Encabezado Titular de la Tabla - Dirección-->
-</tr><!--Cierre de la Fila de Tabla-->
-</thead> <!--Cierre del Encabezado de la Tabla-->
-<tbody valign="middle"> <!--Cuerpo de la Tabla, alineando todo a la mitad-->
-<tr> <!--tr=Table Row:Fila de la Tabla-->
-<!--LLENAR LA FILA DE DATOS SEGÚN CORRESPONDE:-->
-<td><!--td=TableData:Datos de la Tabla--><center>Andrés Joseph</center></td>
-<td><center>Jiménez Leandro</center></td>
-<td><center>29 años</center></td>
-<td><center>2460XXXX</CENTER></td>
-<td><CENTER>89651446</center></td>
-<td><center>ajimenezl@ucatolica.ac.cr</center></td>
-<td><center>La Abundancia de San Carlos</center></td>
-</tr><!--Cierre de la Fila de Tabla-->
-</tbody><!--Cierre del Cuerpo de la Tabla-->
-</center></table> <!--Cierre de la Tabla-->
-<br> <!--Salto de Línea-->
-<div class="texto_vinculado"> <!--Divisor de Textos-->
-<span id="expansiónDeLink"> <!--Expansión del Texto-->
-<font size="5" color="blue"><!--Formato de Fuente-->
-<!--ASÍ SE CREA UN HIPER-VÍNCULO EN HTML:-->
-<i><center><a href="http://es.wikipedia.org/wiki/HTML" title="Bibliografía HTML" target="_blank">Bibliografía</a></center></i><center>
-<!--
-target="_blank" // ES PARA ABRIR VÍNCULO EN PESTAÑA/PÁGINA NUEVA.
-target="_self" // ES PARA ABRIR VÍNCULO EN LA MISMA PESTAÑA/PÁGINA EN USO.
--->
-</font><!--Cierre del Formato de Fuente-->
-</body> <!--Cierre del Cuerpo del Documento HTML-->
-</html> <!--Cierre del Archivo HTML-->
-<p hidden="ESTOY OCULTO"> <!--Información oculta, solo para el programador-->
+<!DOCTYPE html> <!-- Documento HTML5 -->
+<!-- @author: Andrés J. Jiménez Leandro, created: 2015-11-05 Jueves -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRÁCTICA-01 — HTML5</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; padding: 2rem 1rem; background: #f5f6ce; color: #111827; font-family: system-ui, sans-serif; line-height: 1.6; }
+    main { max-width: 960px; margin: 0 auto; background: #fff; border-radius: 16px; padding: 2rem 1.5rem; box-shadow: 0 12px 28px rgba(17, 24, 39, 0.08); }
+    .back { display: inline-block; margin-bottom: 1rem; color: #1d4ed8; font-weight: 600; text-decoration: none; }
+    h1 { margin: 0 0 0.75rem; text-align: center; color: #b91c1c; font-style: italic; text-decoration: underline; }
+    .texto_principal { text-align: center; font-size: 1.35rem; margin: 1rem 0 1.5rem; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; min-width: 640px; border: 2px solid #94a3b8; }
+    th, td { border: 1px solid #94a3b8; padding: 0.7rem; text-align: center; }
+    th { background: #fef9c3; }
+    .texto_vinculado { text-align: center; margin-top: 1.5rem; font-size: 1.15rem; font-style: italic; }
+    .texto_vinculado a { color: #1d4ed8; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">← Volver al índice de prácticas</a>
+    <h1>HOLA MUNDO</h1>
+
+    <div class="texto_principal">
+      <span id="expansionGeneral">
+        <p data-name="párrafo_Principal">Ya programo HTML</p>
+      </span>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">NOMBRES</th>
+            <th scope="col">APELLIDOS</th>
+            <th scope="col">EDAD</th>
+            <th scope="col">TELÉFONO</th>
+            <th scope="col">CELULAR</th>
+            <th scope="col">eM@iL</th>
+            <th scope="col">DIRECCIÓN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Andrés Joseph</td>
+            <td>Jiménez Leandro</td>
+            <td>29 años</td>
+            <td>2460XXXX</td>
+            <td>89651446</td>
+            <td><a href="mailto:ajimenezl@ucatolica.ac.cr">ajimenezl@ucatolica.ac.cr</a></td>
+            <td>La Abundancia de San Carlos</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="texto_vinculado">
+      <span id="expansionDeLink">
+        <a href="https://es.wikipedia.org/wiki/HTML" title="Bibliografía HTML" target="_blank" rel="noopener noreferrer">Bibliografía</a>
+      </span>
+    </div>
+
+    <p hidden>ESTOY OCULTO</p>
+  </main>
+</body>
+</html>
